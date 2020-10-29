@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Lab7</string>
+    <string name="animals">Тварини</string>
+    <string name="btn_animal_txt">Тварини</string>
+    <string name="btn_txt">Show the list</string>
+    <string name="btn_send">Send message</string>
+    <string name="plus">+</string>
+    <string name="btn_animal_detail_txt">Детальніше... </string>
+    <string name="animal_name_txt">Тварина: </string>
+    <string name="animal_class_txt">Клас тварин: </string>
+    <string name="btn_ok_txt">OK</string>
+
+    <string name="predator">хижак</string>
+    <string name="flying">літає</string>
+
+    <string name="additional_flg_txt">Додаткові відомості: </string>
+    <string name="this_animal">Ця тварина</string>
+    <string name="notPredator">не хижак</string>
+    <string name="notFlying">не літає</string>
+
+    <string-array name="animals_groups">
+        <item>Fish</item>
+        <item>Birds</item>
+        <item>Mammals</item>
+    </string-array>
+
+    <string-array name="animals_groups2">
+        <item>Nemo</item>
+        <item>Guppie</item>
+        <item>Penguin</item>
+        <item>Parrot</item>
+        <item>Monkey</item>
+        <item>Lemur</item>
+    </string-array>
+</resources>

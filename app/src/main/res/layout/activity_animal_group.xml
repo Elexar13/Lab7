@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".AnimalGroupActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/cat"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/animalNameImageTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/animal_name_txt"
+            android:layout_gravity="top|end"
+            android:textSize="@dimen/default_text_size" />
+
+        <TextView
+            android:id="@+id/animalClassImageTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/animal_class_txt"
+            android:layout_gravity="bottom|start"
+            android:textSize="@dimen/default_text_size"
+            android:layout_marginBottom="@dimen/default_padding"/>
+    </FrameLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="@string/animal_name_txt"
+            android:textSize="@dimen/default_text_size"/><!-- android:layout_weight="2"-->
+
+        <EditText
+            android:id="@+id/animalNameEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:gravity="center"/><!--android:layout_weight="3"-->
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/animal_class_txt"
+        android:textSize="@dimen/default_text_size"
+        android:layout_marginTop="@dimen/default_padding"/>
+
+    <EditText
+        android:id="@+id/animalClassEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"/>
+        <!--android:inputType="textAnimalName"-->
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <TextView android:text="@string/this_animal"/>
+
+            <RadioGroup>
+                <RadioButton
+                    android:id="@+id/is_predator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/predator"/>
+                <RadioButton
+                    android:id="@+id/is_not_predator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/notPredator"/>
+            </RadioGroup>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView android:text="@string/additional_flg_txt"/>
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/is_flying"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/flying"/>
+                <CheckBox
+                    android:id="@+id/is_not_flying"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/notFlying"/>
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+
+
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_ok_txt"
+        android:layout_gravity="end"
+        android:layout_marginTop="@dimen/default_padding"
+        android:textSize="@dimen/default_text_size"
+        android:onClick="onOkBtnClick"/>
+
+</LinearLayout>
