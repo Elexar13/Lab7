@@ -7,16 +7,22 @@ import java.util.stream.Collectors;
 
 public class AnimalGroups {
 
-    private static ArrayList<Animal> animals = new ArrayList<>(
-            Arrays.asList(
-                new Animal("Nemo", "Fish", false, false),
-                new Animal("Guppie", "Fish", false, false),
-                new Animal("Penguin", "Birds", true, false),
-                new Animal("Parrot", "Birds", true, true),
-                new Animal("Monkey", "Mammals", false, false),
-                new Animal("Lemur", "Mammals", false, false)
-            )
-    );
+    private static ArrayList<Animal> animals ;
+//    = new ArrayList<>(
+//            Arrays.asList(
+//                new Animal("Nemo", "Fish", false, false),
+//                new Animal("Guppie", "Fish", false, false),
+//                new Animal("Penguin", "Birds", true, false),
+//                new Animal("Parrot", "Birds", true, true),
+//                new Animal("Monkey", "Mammals", false, false),
+//                new Animal("Lemur", "Mammals", false, false)
+//            )
+//    );
+
+
+    public static void setAnimals(ArrayList<Animal> animals) {
+        AnimalGroups.animals = animals;
+    }
 
     public static void addAnimal(Animal animal){animals.add(animal);}
 

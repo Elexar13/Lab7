@@ -22,6 +22,7 @@ public class AnimalGroupActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         String animalName = intent.getStringExtra(ANIMAL_NAME);
+
         Animal animal = AnimalGroups.getAnimal(animalName);
 
         EditText txtAnimalName = findViewById(R.id.animalNameEdit);
