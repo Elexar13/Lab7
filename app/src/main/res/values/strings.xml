@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Lab7</string>
+    <string name="app_name">Lab8</string>
     <string name="animals">Тварини</string>
     <string name="btn_animal_txt">Тварини</string>
     <string name="btn_txt">Show the list</string>
@@ -9,6 +9,7 @@
     <string name="animal_name_txt">Тварина: </string>
     <string name="animal_class_txt">Клас тварин: </string>
     <string name="btn_ok_txt">OK</string>
+    <string name="btn_share">Поділитися</string>
 
     <string name="predator">хижак</string>
     <string name="flying">літає</string>
@@ -17,6 +18,7 @@
     <string name="this_animal">Ця тварина</string>
     <string name="notPredator">не хижак</string>
     <string name="notFlying">не літає</string>
+    <string name="btn_add">+</string>
 
     <string-array name="animals_groups">
         <item>Fish</item>

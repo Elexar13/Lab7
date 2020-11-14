@@ -9,8 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AnimalGroupActivity"></activity>
-        <activity android:name=".AnimalListActivity" />
+        <activity android:name=".AddAnimalActivity" android:parentActivityName=".AnimalListActivity">
+        </activity>
+        <activity android:name=".AnimalGroupActivity" />
+        <activity android:name=".AnimalListActivity"
+            android:parentActivityName=".MainActivity"
+            android:label="Список тварин"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

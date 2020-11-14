@@ -7,7 +7,7 @@ import java.util.stream.Collectors;
 
 public class AnimalGroups {
 
-    private final static ArrayList<Animal> animals = new ArrayList<>(
+    private static ArrayList<Animal> animals = new ArrayList<>(
             Arrays.asList(
                 new Animal("Nemo", "Fish", false, false),
                 new Animal("Guppie", "Fish", false, false),
@@ -18,6 +18,7 @@ public class AnimalGroups {
             )
     );
 
+    public static void addAnimal(Animal animal){animals.add(animal);}
 
     public static List<Animal> getAnimals(String group){
         return animals.stream().filter(a -> a.getGroup().equals(group)).collect(Collectors.toList());
