@@ -25,4 +25,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, AnimalListActivity.class);
         startActivity(intent);
     }
+
+    public void onGetJsonBtnClick(View view) {
+        Intent intent = new Intent(this, PostListActivity.class);
+        startActivity(intent);
+    }
 }
